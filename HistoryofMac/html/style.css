@@ -1,0 +1,207 @@
+/* Fonts von Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+* {
+    font-family: 'Playfair Display', serif;
+    background-color: white;
+}
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+header {
+    background-color: white;
+    position: top;
+    width: 100%;
+    z-index: 3;
+    padding-bottom: 15px;
+  }
+header a:link {
+    color: black;
+    text-decoration: none;
+  }
+  
+header a:visited {
+    color: black;
+  
+  }
+ .header a::hover {
+    text-decoration: underline;
+    color: black;
+  }
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: white;
+    opacity: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 2);
+    gap: 5px;
+}
+  
+  .header li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    font-weight: 600;
+    color: black;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  .header .menu-icon {
+    cursor: pointer;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    display: block;
+    float: right;
+  }
+  
+  .header .menu-icon .navicon {
+    background: black;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+    
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  header .menu-btn {
+    display: none;
+  }
+  
+  header .menu-btn:checked ~ .menu {
+    max-height: 1000px;
+  }
+  
+  header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  table, td {
+    margin: auto;
+    justify-content: center;
+    border: 1px gray solid;
+    border-collapse: collapse;
+    background-color: rgb(232, 232, 232);
+  }
+  td {
+    padding: 5px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  footer ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer li {
+    margin: 0 10px;
+  }
+  footer li a {
+    color: black;
+  }
+  footer li a:visited {
+    color: black;
+  }
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  max-width: 120px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.center-button .button{
+  margin: auto;
+  display: block;
+}
+.button a {
+  color: white;
+  text-decoration: none;
+}
+.button a:visited {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
